@@ -6,6 +6,8 @@ Live site: https://presedintero-collab.github.io/
 
 Main site BUG BANG remains untouched: https://www.bug-bang-theory.org/
 
+Support page: https://buymeacoffee.com/Theocwirth
+
 ## Pages
 
 - `index.html` — home / technical overview
@@ -15,6 +17,7 @@ Main site BUG BANG remains untouched: https://www.bug-bang-theory.org/
 - `tsc-tsd.html` — TSC/TSD
 - `3sos-c.html` — 3SOS-C
 - `downloads.html` — public document links
+- `support.html` — Buy Me a Coffee support link
 
 ## Storage policy
 
