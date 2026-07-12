@@ -1,0 +1,106 @@
+name: Build BUG BANG migration preview
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/build-bug-bang-preview.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  build-preview:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download and prepare verified site structure
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import urllib.request, re, shutil, json, hashlib
+
+          pages = ["3sos-c-en.html", "3sos-c-package.html", "3sos-c-software.html", "3sos-c.html", "admin-upload.html", "axis.html", "biblioteca.html", "bug-bang-en.html", "bug-bang.html", "cine-sunt-eu-universul-informational.html", "cine-sunt-eu.html", "cyclic-twist-toroids-ttcn.html", "documente.html", "home.html", "hub.html", "index.html", "informational-genesis.html", "library.html", "map.html", "meme-suite.html", "navigation.html", "start-here.html", "system-map.html", "technical-library.html", "tpn.html", "twist-sferic-ciclic-tscn.html", "visual-suite.html", "who-am-i-primordial-intelligence.html", "who-am-i.html"]
+          assets = ["files/3sos-c-en.pdf", "files/3sos-c-ro.pdf", "files/3sos-c-software-v0-8.zip", "files/bugbang.txt", "files/cine-sunt-eu-universul-informational_site_optimized.pdf", "files/cine-sunt-eu_site_optimized.pdf", "files/informatia-universala-bug-bang-local-ro-web.pdf", "files/readme.txt", "files/tscn-en.pdf", "files/ttcn-en.pdf", "files/ttcn-ro.pdf", "files/universal-information-local-bug-bang-en-web.pdf", "files/who-am-i-informational-universe_en_site_optimized.pdf", "files/who-am-i-primordial-intelligence_en_site_optimized.pdf", "google-sitemap.xml", "images/covers/3sos-c-ro.png", "images/covers/bug-bang-en.png", "images/covers/bug-bang-ro.png", "images/covers/informatia-universala-bug-bang-local-ro.png", "images/covers/informational-genesis-concept-en.png", "images/covers/informational-genesis-concept-ro.png", "images/covers/ip-en.png", "images/covers/ip-ro.png", "images/covers/kernel-en.svg", "images/covers/kernel-ro.svg", "images/covers/real-kernel-ro.jpg", "images/covers/real-tpn-ro.jpg", "images/covers/tpn-en.svg", "images/covers/tpn-ro.svg", "images/covers/tscn-en.png", "images/covers/tscn-ro.png", "images/covers/ttcn-en.png", "images/covers/ttcn-ro.png", "images/covers/ui-local-en-front.png", "images/covers/univers-informational-ro.png", "images/covers/universal-information-local-bug-bang-en-front.png", "images/covers/universe-en.png", "images/meme-suite/01-frame-corrected.png", "images/meme-suite/01-realitati.png", "images/meme-suite/02-four-plus-one.png", "images/meme-suite/03-one-per-day.png", "images/meme-suite/04-coffee.png", "images/meme-suite/05-ordinea-mondiala.png", "images/meme-suite/06-handshake.png", "images/meme-suite/07-radio-kremlin-en.png", "images/meme-suite/08-poarta-raiului-en.png", "images/meme-suite/09-parintii-trump-final-en.png", "llms.txt"]
+          fragments = ["cosmic-footer.html", "cosmic-nav.html"]
+          live = 'https://www.bug-bang-theory.org/'
+          cdn = 'https://cdn.websitepublisher.ai/custom/wid23603/'
+          preview_base = 'https://cosmic.informationalgenesis.org/bug-bang-preview/'
+          stage = Path('bug-bang-preview.new')
+          final = Path('bug-bang-preview')
+          shutil.rmtree(stage, ignore_errors=True)
+          stage.mkdir(parents=True)
+
+          def get(url):
+              req = urllib.request.Request(url, headers={'User-Agent':'BUG-BANG-Migration/1.0'})
+              with urllib.request.urlopen(req, timeout=90) as r:
+                  if r.status != 200:
+                      raise RuntimeError(f'{url}: HTTP {r.status}')
+                  return r.read()
+
+          def rewrite_html(raw):
+              s = raw.decode('utf-8', errors='replace')
+              if '<html' not in s.lower():
+                  raise RuntimeError('Downloaded page is not HTML')
+              s = s.replace('https://cdn.websumo.com/assets/', 'assets/')
+              s = s.replace('//cdn.websumo.com/assets/', 'assets/')
+              s = s.replace(cdn, 'assets/')
+              s = re.sub(r'(["\'])/images/', r'\1assets/images/', s)
+              s = re.sub(r'(["\'])/files/', r'\1assets/files/', s)
+              s = re.sub(r'href=(["\'])/([A-Za-z0-9._-]+(?:\.html)?)\1', lambda m: f'href={m.group(1)}{m.group(2)}{m.group(1)}', s, flags=re.I)
+              s = re.sub(r'href=(["\'])/\1', r'href=\1index.html\1', s, flags=re.I)
+              if re.search(r'<meta\s+name=["\']robots["\'][^>]*>', s, re.I):
+                  s = re.sub(r'<meta\s+name=["\']robots["\'][^>]*>', '<meta name="robots" content="noindex, nofollow">', s, count=1, flags=re.I)
+              else:
+                  s = re.sub(r'<head([^>]*)>', r'<head\1><meta name="robots" content="noindex, nofollow">', s, count=1, flags=re.I)
+              s = s.replace("hostname = '//www.bug-bang-theory.org';", 'hostname = window.location.origin;')
+              s = s.replace('hostname = "//www.bug-bang-theory.org";', 'hostname = window.location.origin;')
+              return s.encode('utf-8')
+
+          manifest = {'pages':{}, 'assets':{}, 'fragments':{}}
+          for name in pages:
+              url = live if name == 'index.html' else live + name
+              data = rewrite_html(get(url))
+              (stage / name).write_bytes(data)
+              manifest['pages'][name] = {'bytes':len(data), 'sha256':hashlib.sha256(data).hexdigest()}
+
+          for name in assets:
+              data = get(cdn + name)
+              target = stage / 'assets' / name
+              target.parent.mkdir(parents=True, exist_ok=True)
+              target.write_bytes(data)
+              manifest['assets'][name] = {'bytes':len(data), 'sha256':hashlib.sha256(data).hexdigest()}
+
+          for name in fragments:
+              data = get(live + 'fragments/' + name)
+              target = stage / 'fragments' / name
+              target.parent.mkdir(parents=True, exist_ok=True)
+              target.write_bytes(data)
+              manifest['fragments'][name] = {'bytes':len(data), 'sha256':hashlib.sha256(data).hexdigest()}
+
+          indexed = sorted(p for p in pages if p not in {'admin-upload.html','bug-bang.html'})
+          sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + ''.join(f'  <url><loc>{preview_base}{p}</loc></url>\n' for p in indexed) + '</urlset>\n'
+          (stage / 'sitemap.xml').write_text(sitemap, encoding='utf-8')
+          (stage / 'robots.txt').write_text('User-agent: *\nDisallow: /bug-bang-preview/\n', encoding='utf-8')
+          manifest['summary'] = {'page_count':len(pages), 'asset_count':len(assets), 'fragment_count':len(fragments)}
+          (stage / 'migration-manifest.json').write_text(json.dumps(manifest, indent=2), encoding='utf-8')
+          (stage / 'README.txt').write_text('BUG BANG isolated migration preview generated from the current public source and matched to the verified 2026-07-12 backup inventory. NOINDEX until final approval.\n', encoding='utf-8')
+
+          shutil.rmtree(final, ignore_errors=True)
+          stage.rename(final)
+          print(manifest['summary'])
+          PY
+      - name: Commit isolated preview
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add bug-bang-preview
+          if git diff --cached --quiet; then
+            echo 'No preview changes.'
+          else
+            git commit -m 'Build isolated BUG BANG migration preview'
+            git push
+          fi
