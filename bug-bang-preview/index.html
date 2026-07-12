@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Your Domain Is Ready — WebsitePublisher.ai</title>
+    <link rel="canonical" href="https://base.websitepublisher.ai" />
+    <meta name="robots" content="noindex, nofollow">
+    <meta http-equiv="content-language" content="en">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <meta property="og:title" content="Your Domain Is Ready — WebsitePublisher.ai" /><meta property="og:description" content="Your domain is successfully connected to WebsitePublisher. The website is on its way." />
+    
+<script type="text/javascript">hostname = '//base.websitepublisher.ai';</script>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --purple: #7c3aed;
+            --purple-light: #a78bfa;
+            --purple-glow: rgba(124, 58, 237, 0.18);
+            --bg: #08080f;
+            --bg-card: rgba(255,255,255,0.04);
+            --text: #f1f0ff;
+            --text-muted: rgba(241,240,255,0.5);
+            --text-subtle: rgba(241,240,255,0.28);
+            --border: rgba(255,255,255,0.08);
+            --border-hover: rgba(124,58,237,0.4);
+        }
+
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        html, body {
+            height: 100%;
+            background: var(--bg);
+            color: var(--text);
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 300;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* ── Purple ambient glow ── */
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            background:
+                radial-gradient(ellipse 60% 40% at 50% 50%, rgba(124,58,237,0.14) 0%, transparent 70%),
+                radial-gradient(ellipse 80% 60% at 50% -10%, rgba(124,58,237,0.18) 0%, transparent 60%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        /* ── Grid raster ── */
+        body::after {
+            content: '';
+            position: fixed;
+            inset: 0;
+            background-image:
+                linear-gradient(rgba(255,255,255,0.028) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,0.028) 1px, transparent 1px);
+            background-size: 48px 48px;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        /* ── Full-page radar background — offset lower-right diagonal ── */
+        .radar-bg {
+            position: fixed;
+            top: 20%;
+            left: 72%;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .radar-bg .r {
+            position: absolute;
+            border-radius: 50%;
+            border: 1px solid rgba(124, 58, 237, 0.18);
+            transform: translate(-50%, -50%);
+            top: 0;
+            left: 0;
+            animation: radar-breathe 6s ease-in-out infinite;
+        }
+
+        .radar-bg .r:nth-child(1)  { width: 120px;  height: 120px;  border-color: rgba(124,58,237,0.45); animation-delay: 0s;    animation-duration: 3.5s; }
+        .radar-bg .r:nth-child(2)  { width: 260px;  height: 260px;  border-color: rgba(124,58,237,0.30); animation-delay: 0.25s; animation-duration: 3.5s; }
+        .radar-bg .r:nth-child(3)  { width: 420px;  height: 420px;  border-color: rgba(124,58,237,0.20); animation-delay: 0.5s;  animation-duration: 3.5s; }
+        .radar-bg .r:nth-child(4)  { width: 600px;  height: 600px;  border-color: rgba(124,58,237,0.13); animation-delay: 0.75s; animation-duration: 3.5s; }
+        .radar-bg .r:nth-child(5)  { width: 800px;  height: 800px;  border-color: rgba(124,58,237,0.09); animation-delay: 1.0s;  animation-duration: 3.5s; }
+        .radar-bg .r:nth-child(6)  { width: 1020px; height: 1020px; border-color: rgba(124,58,237,0.06); animation-delay: 1.25s; animation-duration: 3.5s; }
+        .radar-bg .r:nth-child(7)  { width: 1280px; height: 1280px; border-color: rgba(124,58,237,0.04); animation-delay: 1.5s;  animation-duration: 3.5s; }
+        .radar-bg .r:nth-child(8)  { width: 1560px; height: 1560px; border-color: rgba(124,58,237,0.025); animation-delay: 1.75s; animation-duration: 3.5s; }
+
+        @media (max-width: 640px) {
+            .radar-bg {
+                top: 10%;
+                left: 100%;
+            }
+        }
+
+        @keyframes radar-breathe {
+            0%, 100% { opacity: 0.7; transform: translate(-50%, -50%) scale(0.97); }
+            50%       { opacity: 1;   transform: translate(-50%, -50%) scale(1.03); }
+        }
+
+        /* ── Layout ── */
+        .page {
+            position: relative;
+            z-index: 1;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 48px 24px;
+        }
+
+        /* ── Circle logo ── */
+        .logo-wrap {
+            margin-bottom: 52px;
+        }
+        .logo-wrap img {
+            width: 72px;
+            height: 72px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid rgba(124,58,237,0.3);
+            box-shadow: 0 0 0 6px rgba(124,58,237,0.08), 0 0 32px rgba(124,58,237,0.25);
+        }
+
+        /* ── Center dot — sits at radar origin ── */
+        .signal-dot {
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background: rgba(124,58,237,0.35);
+            box-shadow: 0 0 0 5px rgba(124,58,237,0.08), 0 0 16px rgba(124,58,237,0.3);
+            animation: dot-pulse 3s ease-in-out infinite;
+            opacity: 0.5;
+        }
+
+        @keyframes dot-pulse {
+            0%, 100% { box-shadow: 0 0 0 5px rgba(124,58,237,0.06), 0 0 12px rgba(124,58,237,0.25); opacity: 0.45; }
+            50%       { box-shadow: 0 0 0 8px rgba(124,58,237,0.04), 0 0 20px rgba(124,58,237,0.4);  opacity: 0.6; }
+        }
+
+        /* ── Status badge ── */
+        .status-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(124,58,237,0.12);
+            border: 1px solid rgba(124,58,237,0.3);
+            border-radius: 100px;
+            padding: 6px 16px 6px 10px;
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--purple-light);
+            letter-spacing: 0.01em;
+            margin-bottom: 28px;
+        }
+
+        .status-dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: #10b981;
+            box-shadow: 0 0 6px rgba(16,185,129,0.8);
+            animation: blink 2s ease-in-out infinite;
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50%       { opacity: 0.4; }
+        }
+
+        /* ── Headline — Instrument Serif ── */
+        .headline {
+            font-family: 'Instrument Serif', serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: clamp(36px, 5.5vw, 58px);
+            line-height: 1.08;
+            letter-spacing: -0.01em;
+            text-align: center;
+            max-width: 660px;
+            margin-bottom: 20px;
+            color: var(--text);
+        }
+
+        .headline em {
+            font-style: italic;
+            background: linear-gradient(135deg, var(--purple-light) 0%, #c084fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subline {
+            font-size: 17px;
+            font-weight: 300;
+            color: var(--text-muted);
+            text-align: center;
+            max-width: 460px;
+            line-height: 1.65;
+            margin-bottom: 44px;
+        }
+
+        /* ── Cards ── */
+        .cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            width: 100%;
+            max-width: 600px;
+            margin-bottom: 40px;
+        }
+
+        @media (max-width: 560px) {
+            .cards { grid-template-columns: 1fr; }
+        }
+
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 24px;
+            backdrop-filter: blur(4px);
+            transition: border-color 0.2s, background 0.2s;
+        }
+
+        .card:hover {
+            border-color: var(--border-hover);
+            background: rgba(124,58,237,0.06);
+        }
+
+        .card-icon {
+            width: 36px;
+            height: 36px;
+            border-radius: 10px;
+            background: var(--purple-glow);
+            border: 1px solid rgba(124,58,237,0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 14px;
+        }
+
+        .card-icon svg {
+            width: 18px;
+            height: 18px;
+            stroke: var(--purple-light);
+            fill: none;
+            stroke-width: 1.8;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .card-title {
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--text);
+            margin-bottom: 6px;
+        }
+
+        .card-desc {
+            font-size: 13px;
+            font-weight: 300;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        /* ── CTA buttons ── */
+        .cta-group {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 56px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            border-radius: 100px;
+            padding: 13px 28px;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 15px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: transform 0.15s, box-shadow 0.15s, background 0.15s;
+            white-space: nowrap;
+        }
+
+        .btn:active { transform: scale(0.97); }
+
+        .btn-primary {
+            background: var(--purple);
+            color: #fff;
+            box-shadow: 0 4px 20px rgba(124,58,237,0.35);
+        }
+
+        .btn-primary:hover {
+            background: #6d28d9;
+            box-shadow: 0 6px 28px rgba(124,58,237,0.5);
+            transform: translateY(-1px);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--text-muted);
+            border: 1px solid var(--border);
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--border-hover);
+            color: var(--text);
+            transform: translateY(-1px);
+        }
+
+        .btn svg {
+            width: 16px;
+            height: 16px;
+            stroke: currentColor;
+            fill: none;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        /* ── Footer ── */
+        footer {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            padding: 24px;
+            border-top: 1px solid var(--border);
+            font-size: 13px;
+            color: var(--text-subtle);
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 0;
+        }
+        .footer-legal {
+            display: inline-flex;
+            align-items: center;
+            white-space: nowrap;
+        }
+
+        footer a {
+            color: var(--text-subtle);
+            text-decoration: none;
+            transition: color 0.15s;
+        }
+
+        footer a:hover { color: var(--purple-light); }
+
+        .divider {
+            width: 1px;
+            height: 12px;
+            background: var(--border);
+            display: inline-block;
+            margin: 0 12px;
+            vertical-align: middle;
+        }
+    </style>
+<meta name="disable-service-worker" content="true">
+<meta name="disable-service-worker" content="true">
+
+
+
+</head>
+<body>
+
+    <!-- Full-page radar background -->
+    <div class="radar-bg">
+        <div class="r"></div>
+        <div class="r"></div>
+        <div class="r"></div>
+        <div class="r"></div>
+        <div class="r"></div>
+        <div class="r"></div>
+        <div class="r"></div>
+        <div class="r"></div>
+        <div class="signal-dot"></div>
+    </div>
+
+    <main class="page">
+
+        <!-- Circle logo -->
+        <div class="logo-wrap">
+            <img src="https://cdn.websitepublisher.ai/custom/wid22254/logo.png" alt="WebsitePublisher.ai">
+        </div>
+
+        <!-- Status badge -->
+        <div class="status-badge">
+            <span class="status-dot"></span>
+            Domain connected
+        </div>
+
+        <!-- Headline — Instrument Serif with italic accent -->
+        <h1 class="headline">
+            You're pointing in<br>
+            <em>the right direction.</em>
+        </h1>
+
+        <p class="subline">
+            Your domain is successfully connected to WebsitePublisher.
+            The website for this domain is on its way — check back soon.
+        </p>
+
+        <!-- Info cards -->
+        <div class="cards">
+            <div class="card">
+                <div class="card-icon">
+                    <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                </div>
+                <p class="card-title">Domain owner?</p>
+                <p class="card-desc">Your DNS settings are correct. Start building your website with any AI assistant.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">
+                    <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </div>
+                <p class="card-title">Just visiting?</p>
+                <p class="card-desc">This website is being built. The owner will have it up and running shortly.</p>
+            </div>
+        </div>
+
+        <!-- CTA buttons -->
+        <div class="cta-group">
+            <a href="https://websitepublisher.ai" class="btn btn-primary">
+                Build your website
+                <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="https://dashboard.websitepublisher.ai" class="btn btn-secondary">
+                Go to dashboard
+                <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+        </div>
+
+    </main>
+
+    <footer>
+        <a href="https://websitepublisher.ai">WebsitePublisher.ai</a>
+        <span class="divider"></span>
+        Build websites with AI
+        <span class="divider"></span>
+        <span class="footer-legal"><a href="https://websitepublisher.ai/terms">Terms</a><span class="divider"></span><a href="https://websitepublisher.ai/privacy">Privacy</a></span>
+    </footer>
+
+    
+<!-- WPE-DEBUG path=api slug=index.html -->
+<script src="https://cdn.websitepublisher.ai/wpe/loader.js" data-project="22640" data-page="index.html" defer></script>
+
+
+<!-- WebsitePublisher.ai Powered-by Widget -->
+<div id="wpa-widget" style="position:fixed;bottom:0;right:0;z-index:2147483647;display:flex;justify-content:flex-end;pointer-events:none;padding:0 12px 12px 0;">
+    <div style="pointer-events:auto;display:inline-flex;align-items:center;gap:6px;padding:6px 14px;background:rgba(15,15,15,0.85);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-radius:20px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:11px;line-height:1;color:rgba(255,255,255,0.7);box-shadow:0 2px 12px rgba(0,0,0,0.25);border:1px solid rgba(255,255,255,0.08);">
+        <a href="https://www.websitepublisher.ai?ref=widget" target="_blank" rel="noopener" style="color:rgba(255,255,255,0.9);text-decoration:none;display:inline-flex;align-items:center;gap:4px;">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            WebsitePublisher.ai
+        </a>
+        <span style="color:rgba(255,255,255,0.25);">&middot;</span>
+        <a href="https://www.websitepublisher.ai/report?url=https%3A%2F%2Fbase.websitepublisher.ai" target="_blank" rel="noopener" style="color:rgba(255,255,255,0.5);text-decoration:none;">Report Abuse</a>
+    </div>
+</div>
+</body>
+</html>

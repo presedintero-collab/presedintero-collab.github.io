@@ -1,0 +1,329 @@
+{
+  "pages": {
+    "3sos-c-en.html": {
+      "bytes": 17466,
+      "sha256": "0fc7f00e1fd6547e4f4bdf68ad680f4bc3aa5ceb0b1a1b16c3578ab670fedff8"
+    },
+    "3sos-c-package.html": {
+      "bytes": 17466,
+      "sha256": "0fc7f00e1fd6547e4f4bdf68ad680f4bc3aa5ceb0b1a1b16c3578ab670fedff8"
+    },
+    "3sos-c-software.html": {
+      "bytes": 17466,
+      "sha256": "0fc7f00e1fd6547e4f4bdf68ad680f4bc3aa5ceb0b1a1b16c3578ab670fedff8"
+    },
+    "3sos-c.html": {
+      "bytes": 17466,
+      "sha256": "0fc7f00e1fd6547e4f4bdf68ad680f4bc3aa5ceb0b1a1b16c3578ab670fedff8"
+    },
+    "admin-upload.html": {
+      "bytes": 17466,
+      "sha256": "0fc7f00e1fd6547e4f4bdf68ad680f4bc3aa5ceb0b1a1b16c3578ab670fedff8"
+    },
+    "axis.html": {
+      "bytes": 17466,
+      "sha256": "0fc7f00e1fd6547e4f4bdf68ad680f4bc3aa5ceb0b1a1b16c3578ab670fedff8"
+    },
+    "biblioteca.html": {
+      "bytes": 17466,
+      "sha256": "0fc7f00e1fd6547e4f4bdf68ad680f4bc3aa5ceb0b1a1b16c3578ab670fedff8"
+    },
+    "bug-bang-en.html": {
+      "bytes": 17466,
+      "sha256": "0fc7f00e1fd6547e4f4bdf68ad680f4bc3aa5ceb0b1a1b16c3578ab670fedff8"
+    },
+    "bug-bang.html": {
+      "bytes": 17466,
+      "sha256": "0fc7f00e1fd6547e4f4bdf68ad680f4bc3aa5ceb0b1a1b16c3578ab670fedff8"
+    },
+    "cine-sunt-eu-universul-informational.html": {
+      "bytes": 17466,
+      "sha256": "0fc7f00e1fd6547e4f4bdf68ad680f4bc3aa5ceb0b1a1b16c3578ab670fedff8"
+    },
+    "cine-sunt-eu.html": {
+      "bytes": 17466,
+      "sha256": "0fc7f00e1fd6547e4f4bdf68ad680f4bc3aa5ceb0b1a1b16c3578ab670fedff8"
+    },
+    "cyclic-twist-toroids-ttcn.html": {
+      "bytes": 17466,
+      "sha256": "0fc7f00e1fd6547e4f4bdf68ad680f4bc3aa5ceb0b1a1b16c3578ab670fedff8"
+    },
+    "documente.html": {
+      "bytes": 17466,
+      "sha256": "0fc7f00e1fd6547e4f4bdf68ad680f4bc3aa5ceb0b1a1b16c3578ab670fedff8"
+    },
+    "home.html": {
+      "bytes": 17466,
+      "sha256": "0fc7f00e1fd6547e4f4bdf68ad680f4bc3aa5ceb0b1a1b16c3578ab670fedff8"
+    },
+    "hub.html": {
+      "bytes": 17466,
+      "sha256": "0fc7f00e1fd6547e4f4bdf68ad680f4bc3aa5ceb0b1a1b16c3578ab670fedff8"
+    },
+    "index.html": {
+      "bytes": 17466,
+      "sha256": "0fc7f00e1fd6547e4f4bdf68ad680f4bc3aa5ceb0b1a1b16c3578ab670fedff8"
+    },
+    "informational-genesis.html": {
+      "bytes": 17466,
+      "sha256": "0fc7f00e1fd6547e4f4bdf68ad680f4bc3aa5ceb0b1a1b16c3578ab670fedff8"
+    },
+    "library.html": {
+      "bytes": 17466,
+      "sha256": "0fc7f00e1fd6547e4f4bdf68ad680f4bc3aa5ceb0b1a1b16c3578ab670fedff8"
+    },
+    "map.html": {
+      "bytes": 17466,
+      "sha256": "0fc7f00e1fd6547e4f4bdf68ad680f4bc3aa5ceb0b1a1b16c3578ab670fedff8"
+    },
+    "meme-suite.html": {
+      "bytes": 17466,
+      "sha256": "0fc7f00e1fd6547e4f4bdf68ad680f4bc3aa5ceb0b1a1b16c3578ab670fedff8"
+    },
+    "navigation.html": {
+      "bytes": 17466,
+      "sha256": "0fc7f00e1fd6547e4f4bdf68ad680f4bc3aa5ceb0b1a1b16c3578ab670fedff8"
+    },
+    "start-here.html": {
+      "bytes": 17466,
+      "sha256": "0fc7f00e1fd6547e4f4bdf68ad680f4bc3aa5ceb0b1a1b16c3578ab670fedff8"
+    },
+    "system-map.html": {
+      "bytes": 17466,
+      "sha256": "0fc7f00e1fd6547e4f4bdf68ad680f4bc3aa5ceb0b1a1b16c3578ab670fedff8"
+    },
+    "technical-library.html": {
+      "bytes": 17466,
+      "sha256": "0fc7f00e1fd6547e4f4bdf68ad680f4bc3aa5ceb0b1a1b16c3578ab670fedff8"
+    },
+    "tpn.html": {
+      "bytes": 17466,
+      "sha256": "0fc7f00e1fd6547e4f4bdf68ad680f4bc3aa5ceb0b1a1b16c3578ab670fedff8"
+    },
+    "twist-sferic-ciclic-tscn.html": {
+      "bytes": 17466,
+      "sha256": "0fc7f00e1fd6547e4f4bdf68ad680f4bc3aa5ceb0b1a1b16c3578ab670fedff8"
+    },
+    "visual-suite.html": {
+      "bytes": 17466,
+      "sha256": "0fc7f00e1fd6547e4f4bdf68ad680f4bc3aa5ceb0b1a1b16c3578ab670fedff8"
+    },
+    "who-am-i-primordial-intelligence.html": {
+      "bytes": 17466,
+      "sha256": "0fc7f00e1fd6547e4f4bdf68ad680f4bc3aa5ceb0b1a1b16c3578ab670fedff8"
+    },
+    "who-am-i.html": {
+      "bytes": 17466,
+      "sha256": "0fc7f00e1fd6547e4f4bdf68ad680f4bc3aa5ceb0b1a1b16c3578ab670fedff8"
+    }
+  },
+  "assets": {
+    "files/3sos-c-en.pdf": {
+      "bytes": 3287797,
+      "sha256": "56369140c70ea571064cb0d94212fdb4238e999c5e6c17976213f09b881ce6e9"
+    },
+    "files/3sos-c-ro.pdf": {
+      "bytes": 3269469,
+      "sha256": "98cb0fefc44f369dafb77f7260cfb7165b3ff4446efb436dcfebf254faa35be3"
+    },
+    "files/3sos-c-software-v0-8.zip": {
+      "bytes": 13946,
+      "sha256": "fbe3503a8d796d125a54cc2b405d8b21d515dd1d77c61851ab54871ae48377fb"
+    },
+    "files/bugbang.txt": {
+      "bytes": 8,
+      "sha256": "8200e59328583cf67ff7a27b689a5d3bb5da909c895e7bdd71005b3ab5c88675"
+    },
+    "files/cine-sunt-eu-universul-informational_site_optimized.pdf": {
+      "bytes": 497101,
+      "sha256": "f8e2ab66e70eb166fe3da34eb094d312467155fcc615f38ccf56193c6f9ac08a"
+    },
+    "files/cine-sunt-eu_site_optimized.pdf": {
+      "bytes": 1070223,
+      "sha256": "8cd5f8e6a848c7a42a81d66b645900aec1cda26269909432ef754a6d0c4dd762"
+    },
+    "files/informatia-universala-bug-bang-local-ro-web.pdf": {
+      "bytes": 706258,
+      "sha256": "9b057dc2daf67b5182a48fd288eaa1628d671cdf6c0f1ff4c6dff84d40fecf4b"
+    },
+    "files/readme.txt": {
+      "bytes": 14,
+      "sha256": "06eef2e8685ebac405cb6c327d473c6e14b084d5ae9da6ab20c5a67a0e6c04d5"
+    },
+    "files/tscn-en.pdf": {
+      "bytes": 2831363,
+      "sha256": "4e1ad99e8b526cc15404e9b80731f3852f853b390f3ad3a329f4dcb60f3fb6c7"
+    },
+    "files/ttcn-en.pdf": {
+      "bytes": 563368,
+      "sha256": "bc4001b7cd4d44d5cb9a93f118eee0d5da94c2d4a5e276feec5b80a8143e5739"
+    },
+    "files/ttcn-ro.pdf": {
+      "bytes": 677921,
+      "sha256": "a2691edef6fb856d3ef341ede272ddfd37ab4c717facbd01716308e98770c0d4"
+    },
+    "files/universal-information-local-bug-bang-en-web.pdf": {
+      "bytes": 481712,
+      "sha256": "ccdf0298253ec6ba43fcda9946804b7f3add9fbcb2d0b624d94cd577507a6b08"
+    },
+    "files/who-am-i-informational-universe_en_site_optimized.pdf": {
+      "bytes": 156719,
+      "sha256": "5ff144ae1f12357bc3cc8740f4a608c9b20ac9d69bee81f35287d606b9f52569"
+    },
+    "files/who-am-i-primordial-intelligence_en_site_optimized.pdf": {
+      "bytes": 191643,
+      "sha256": "6a6fd284eb56c412c2d0b4bcf9425a61dd8c368739c060c18b406af8c0dc31c2"
+    },
+    "google-sitemap.xml": {
+      "bytes": 2088,
+      "sha256": "e78909ecaa0b9e7e573a8f964b5dd070e0b8802a425f54b9c5fcc1f478a09f92"
+    },
+    "images/covers/3sos-c-ro.png": {
+      "bytes": 1549905,
+      "sha256": "14155e6cf02aaff9a816f0609c9bfad4779fb0a9e5f6db3f0d528da3815a9ed1"
+    },
+    "images/covers/bug-bang-en.png": {
+      "bytes": 1816458,
+      "sha256": "93b42a47b1090a2075852be91821611272da250bc4a5a723ffa13360c1cdb647"
+    },
+    "images/covers/bug-bang-ro.png": {
+      "bytes": 1779630,
+      "sha256": "d2541e63c94448565c1382efb972fc8b76de114b1149d6de59e8a31242d31498"
+    },
+    "images/covers/informatia-universala-bug-bang-local-ro.png": {
+      "bytes": 2607910,
+      "sha256": "da5057ebdfc220eb95c63e6296a47d6b9b8d68ae8891f452a44c2555beed77e8"
+    },
+    "images/covers/informational-genesis-concept-en.png": {
+      "bytes": 2569846,
+      "sha256": "fc425f359e24f0b4d4f25edd144fe796f57ac26c330cfd77ac16d8d9e47a262c"
+    },
+    "images/covers/informational-genesis-concept-ro.png": {
+      "bytes": 2433091,
+      "sha256": "42efd040ea48476dc44a7b070012607f91a36a98ca34798295bbd754c705be9f"
+    },
+    "images/covers/ip-en.png": {
+      "bytes": 903189,
+      "sha256": "356e62a9a63657b7f774efb8adf57f1b970397d561ab26e385fd048fb9cec3ed"
+    },
+    "images/covers/ip-ro.png": {
+      "bytes": 1764866,
+      "sha256": "6c0d826a0c28247702a7dac6f43ac4a055a330183ad54bfee1e084eebec02f14"
+    },
+    "images/covers/kernel-en.svg": {
+      "bytes": 1895,
+      "sha256": "bfe82eaa034e70625696f768a6778d01d57f45b9fbb3ec11745e0983b0fa84c9"
+    },
+    "images/covers/kernel-ro.svg": {
+      "bytes": 1892,
+      "sha256": "4c84514be64495f668c54606afea1525c481218b7378263550ce574b7736d97d"
+    },
+    "images/covers/real-kernel-ro.jpg": {
+      "bytes": 7391,
+      "sha256": "e1dadf35011d56e2b25e9d4a446207b8ed4ec2a29858b09f49efbaa0914e5325"
+    },
+    "images/covers/real-tpn-ro.jpg": {
+      "bytes": 2554,
+      "sha256": "bd9f182eebecee81e573d8c8a62ff122ab4c7eb229c7406ba3a12d82bb1b5e40"
+    },
+    "images/covers/tpn-en.svg": {
+      "bytes": 2097,
+      "sha256": "7811640367962d610e916a12bb16663ced903b20b2c5d61740b3e00236a500d2"
+    },
+    "images/covers/tpn-ro.svg": {
+      "bytes": 2097,
+      "sha256": "c5571bc11e6dfd32a002ba8be5f809ec75a245c414bc64f2628053fd92759462"
+    },
+    "images/covers/tscn-en.png": {
+      "bytes": 1095877,
+      "sha256": "f758947528bb3abdb9c414e3a02a1f04cd844c5853515db39133e2eeeae32a06"
+    },
+    "images/covers/tscn-ro.png": {
+      "bytes": 1361976,
+      "sha256": "b9c33769c17dbdeeb2c0897ac5200a2e165d3409f7bdd30347476933f5102951"
+    },
+    "images/covers/ttcn-en.png": {
+      "bytes": 1369746,
+      "sha256": "ae6a69bf0c13e3e0fc7d56d0ee2d39795cea26f664ec9c45c68623b45a40d5bd"
+    },
+    "images/covers/ttcn-ro.png": {
+      "bytes": 1207725,
+      "sha256": "79850843312edc5463271e8211cb2b3ea7954bb801c4c7836a66a0cf323ba846"
+    },
+    "images/covers/ui-local-en-front.png": {
+      "bytes": 2571302,
+      "sha256": "9e2e45ec7ee0a9f6e369feb4b1781075bef4ca8739c867bc7ed8fdfc05c43410"
+    },
+    "images/covers/univers-informational-ro.png": {
+      "bytes": 1690553,
+      "sha256": "19e617b2f235ca1563e3e5a9d04e01286aed3bea127bf855e88487f2ba68089a"
+    },
+    "images/covers/universal-information-local-bug-bang-en-front.png": {
+      "bytes": 2571302,
+      "sha256": "9e2e45ec7ee0a9f6e369feb4b1781075bef4ca8739c867bc7ed8fdfc05c43410"
+    },
+    "images/covers/universe-en.png": {
+      "bytes": 2093509,
+      "sha256": "04d324b1108735f47472c9653ee0af3525bbf38cee51d4039d101db7ce78e034"
+    },
+    "images/meme-suite/01-frame-corrected.png": {
+      "bytes": 2519466,
+      "sha256": "7394ece13fb7967c847cf2f2ad00385d0bceefa265613035704561b1b610d0ba"
+    },
+    "images/meme-suite/01-realitati.png": {
+      "bytes": 2426071,
+      "sha256": "b67a6f986fa26d0d6d7034f96cc849a971f48e8ae1317d4e823de32dbe416acf"
+    },
+    "images/meme-suite/02-four-plus-one.png": {
+      "bytes": 2601216,
+      "sha256": "73d991c5de09b09abce43ccd382ae3143888c0a2814a8ff23208d42957b582b6"
+    },
+    "images/meme-suite/03-one-per-day.png": {
+      "bytes": 2874827,
+      "sha256": "47072a95dfd8afbc3c71435f095840053a28470cf3b634d4fe2586b60ef736ca"
+    },
+    "images/meme-suite/04-coffee.png": {
+      "bytes": 2255969,
+      "sha256": "31c13f2eff4f26bc1bfff288da32060e41414e20c24af6dd44de779ed5ce5381"
+    },
+    "images/meme-suite/05-ordinea-mondiala.png": {
+      "bytes": 3147556,
+      "sha256": "100f43eb07df71214c5e6d5fa640439fcd40ce9657a506a2c02d0f91b40a2f89"
+    },
+    "images/meme-suite/06-handshake.png": {
+      "bytes": 2487709,
+      "sha256": "853abdd53b907ceb17e26ef6c68889c98a7dccb7e0586a8d076dc83e35938ee7"
+    },
+    "images/meme-suite/07-radio-kremlin-en.png": {
+      "bytes": 2519466,
+      "sha256": "7394ece13fb7967c847cf2f2ad00385d0bceefa265613035704561b1b610d0ba"
+    },
+    "images/meme-suite/08-poarta-raiului-en.png": {
+      "bytes": 2634518,
+      "sha256": "c20237bbc92329867696721d9513b6fcf1fada5b4f87b82c7302e2e788b26867"
+    },
+    "images/meme-suite/09-parintii-trump-final-en.png": {
+      "bytes": 3305524,
+      "sha256": "4fc5bb1969de2469aea234408f39dee0f8f27d36e7f52ee6334cbb04ac5c08a0"
+    },
+    "llms.txt": {
+      "bytes": 1637,
+      "sha256": "266417b311c3ef940c694659d36de556b923146bcf36136f927be6d6cb1a9b5c"
+    }
+  },
+  "fragments": {
+    "cosmic-footer.html": {
+      "bytes": 17466,
+      "sha256": "0fc7f00e1fd6547e4f4bdf68ad680f4bc3aa5ceb0b1a1b16c3578ab670fedff8"
+    },
+    "cosmic-nav.html": {
+      "bytes": 17466,
+      "sha256": "0fc7f00e1fd6547e4f4bdf68ad680f4bc3aa5ceb0b1a1b16c3578ab670fedff8"
+    }
+  },
+  "summary": {
+    "page_count": 29,
+    "asset_count": 48,
+    "fragment_count": 2
+  }
+}
